@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>CRUD-Employees</title>
+</head>
+<body>
+    <div class="title">
+        <h1><span id="regist-title-secound">Register</span> in the database</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img src="/static/image/OIP.jpg" alt="">
+                <img id="blocimage" src="/static/image/bloc1.jpg" alt="">
+                <img id="blocimages" src="/static/image/bloc2.jpg" alt="">
+                <div class="info">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <label for="">Name:</label>
+                        <input name="name" placeholder="Insert employee name.." id="name" required autocomplete="off" type="text">
+                        <br>
+                        <label for="">First Name:</label>
+                        <input name="first-name" placeholder="Insert employee first name.." id="first-name" required autocomplete="off" type="text">
+                        <br>
+                        <label  for="">Possition Company:</label>
+                        <input name="postion" placeholder="Insert employee postion.." id="company" required autocomplete="off" type="text">
+                        <br>
+                        <label for="">Salary:</label>
+                        <input name="salary" placeholder="Insert employee salary.." id="salary" required autocomplete="off" type="text">
+                        <br>
+                        <label for="">Symbols Currency:</label>
+                        <select  name="symbol" id="selected">
+                            <option value="Ron">Ron</option>
+                            <option value="Euro">Euro</option>
+                            <option value="Dollar">Dollar</option>
+                        </select>
+                        <button type="submit">Save DATA</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

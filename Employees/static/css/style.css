@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital@1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/static/image/20150805204041-google-company-building-corporate.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+#regist-title-secound {
+    
+    color: green;
+    font-family: 'Prompt', sans-serif;
+   
+}
+.title h1 {
+    position: absolute;
+    z-index:1;
+    top: 100px;
+    left: 700px;
+    color: rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif;
+    animation: titlu-animatie 2s forwards;
+}
+@keyframes titlu-animatie {
+    0% {left:-10px; opacity: 0;}
+    25% {opacity: 0;}
+    26%{opacity: 0;}
+    30%{opacity: 0;}
+    34%{
+        opacity: 0;
+    }
+    100% {opacity: 1;}
+}
+.container {
+    position: relative;
+    left: 315px;
+    top: 70px;
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0px 0px 20px 17px black;
+}
+form {
+    position: relative;
+    left: 150px;
+    top: 120px;
+    
+}
+label  {
+    font-family: 'Prompt', sans-serif;
+}
+#name {
+    position: relative;
+    top: -1010px;
+    border: none;
+    outline: none;
+    width: 300px;
+    background-color: black;
+    left: 230px;
+    padding: 15px; 
+    font-size: 20px;
+    border-radius: 0px 15px 0px 15px ;
+    text-align: center;
+    color: white;
+    animation: name-inpt 2s;
+
+    
+}
+#first-name {
+    position: relative;
+    top: -995px;
+    left: 196px;
+    border: none;
+    outline: none;
+    width: 300px;
+    background-color: black;
+    padding: 15px; 
+    font-size: 20px;
+    border-radius: 0px 15px 0px 15px ;
+    text-align: center;
+    color: white;
+    animation: first-name 3s;
+}
+#company {
+    position: relative;
+    top: -980px;
+    left: 132px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: black;
+    padding: 15px; 
+    font-size: 20px;
+    border-radius: 0px 15px 0px 15px ;
+    text-align: center;
+    color: white;
+    animation: company 4s;
+   
+}
+#salary {
+    top: -964px;
+    position: relative;
+    left: 234px;
+    border: none;
+    outline: none;
+    width: 300px;
+    background-color: black;
+    padding: 15px; 
+    font-size: 20px;
+    border-radius: 0px 15px 0px  15px ;
+    text-align: center;
+    color: white;
+    animation: salary 5s;
+    
+    
+}
+@keyframes name-inpt {
+    0% {left: -500px; opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+    
+   
+    
+}
+@keyframes first-name {
+    0% {left: 600px; opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+    
+    
+}
+@keyframes company {
+    0% {left: -700px; opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+    
+}
+@keyframes salary {
+    0% {left: 700px; opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+    
+}
+#selected {
+    position: relative;
+    left: -55px;
+}
+.img img {
+    position: relative;
+    height:500px;
+    width: 360px;
+}
+#blocimage {
+    position: relative;
+    left: -365px;
+    animation: blockimg 6s forwards infinite;
+    animation-delay: 10s ;
+    
+}
+@keyframes blockimg {
+    0% {opacity: 1;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    
+}
+#blocimages {
+    position: relative;
+    width: 361px;
+    left: -1px;
+    top: -505px;
+    transition: all 2s;
+    animation: imagine3 14s ease forwards infinite;
+    animation-delay: 4s ;
+}
+@keyframes imagine3 {
+    0% {opacity: 1;}
+    10% {opacity: 0;}
+    20% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 0;}
+    70% {opacity: 0;}
+    80% {opacity: 0;}
+    90% {opacity: 0;}
+    100% {opacity: 1;}
+   
+    
+    
+}
+::placeholder {
+    color: white;
+}
+#selected {
+    position: relative;
+    top: -948px;
+    left: 146px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: black;
+    padding: 15px; 
+    font-size: 20px;
+    border-radius: 0px 15px 0px 15px ;
+    text-align: center;
+    color: white;
+    animation: select-optiune 6s;
+
+}
+@keyframes select-optiune {
+    0% {left: -700px; opacity: 0;}
+    25% {opacity: 0;}
+    30% {opacity: 0;}
+
+    
+}
+select option[value='Ron'] {
+    background-color: black;
+}
+select option[value='Euro'] {
+    background-color: rgb(35, 33, 33);
+}
+select option[value='Dollar'] {
+    background-color: rgb(0, 0, 0);
+}
+button[type='submit'] {
+    position: relative;
+    background-color: rgb(0, 95, 6);
+    color: white;
+    top: -938px;
+    left: 209px;
+    width: 441px;
+    height: 42px;
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    animation: btn 5s forwards;
+
+
+}
+button:hover {
+    box-shadow: 0px 0px 1px 3px green ;
+}
+@keyframes btn {
+    0%{top: -800px; opacity: 0;}
+    25% {opacity: 0;}
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 0;
+    }
+    
+}
